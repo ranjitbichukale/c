@@ -1,0 +1,31 @@
+//1.	Program to implement arithmetic operation using c++ language.
+#include<iostream>
+using namespace std;
+int main(){
+    int num1,num2;
+    char op;
+    cout<<"Enter First Number:-"<<endl;
+    cin>>num1;
+    cout<<"Enter Second Number:-"<<endl;
+    cin>>num2;
+    cout<<"Enter operation (+,-,*,/)"<<endl;
+    cin>>op;
+    switch(op){
+        case '+':
+            cout<<"Addition:-"<<num1+num2<<endl;
+            break;
+        case '-':
+            cout<<"Subtreaction:-"<<num1-num2<<endl;
+            break;
+        case '*':
+            cout<<"Munltiplication:-"<<num1*num2<<endl;
+            break;
+        case '/':
+            cout<<"Division:-"<<num1/num2<<endl;
+            break;
+        default:
+            cout<<"Enter correct option";
+
+    }
+    return 0;
+}

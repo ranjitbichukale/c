@@ -1,0 +1,33 @@
+// 2.	Program to show grade from entered value by using else-if ladder 
+// 0-40 : Fail
+// 41-60: pass with C grade
+// 61-75: pass with  B grade
+// 76 – 90:  pass with  A grade
+// 90-100: pass with  A+ grade
+
+#include<iostream>
+using namespace std;
+int main(){
+    int marks;
+    cout<<"Enter Gained marks in exam:-";
+    cin>>marks;
+    if(marks>=90){
+        cout<<"Pass with A+ Grade";
+    }
+    else if(marks>=79&&marks<=90){
+        cout<<"Passed With a grade";
+    }
+    else if(marks>=61&marks<=75){
+        cout<<"Passed with B grade";
+    }
+    else if(marks>=41&&marks<=60){
+        cout<<"Passed with c grade";
+    }
+    else if (marks>=0&&marks<=40){
+        cout<<"Fail";
+    }
+    else{
+        cout<<"You Enterd wrong marks";
+    }
+    
+}
